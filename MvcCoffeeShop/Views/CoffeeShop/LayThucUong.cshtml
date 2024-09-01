@@ -1,0 +1,13 @@
+﻿@using MvcCoffeeShop.Models
+@model IEnumerable<PhanLoai>
+<div class="title">Menu</div>
+<ul class="list-group">
+    @foreach (var phanloai in Model)
+    {
+        <a href="@Url.Action("SPTheoThucUong", "CoffeeShop", new { id=phanloai.MaPhanLoai })"
+           class="list-group-item list-group-item-action">
+            @phanloai.TenPhanLoai
+        </a>
+    }
+</ul>
+

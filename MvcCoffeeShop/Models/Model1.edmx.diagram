@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2979c772a3b743a5aaec68374c5f8a29" Name="Diagram1">
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.ChiTietDonHang" Width="1.5" PointX="7.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.DonHang" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.HoaDon" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.KhachHang" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.Kho" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.NguyenLieu" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.NhanVien" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.PhanLoai" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.SanPham" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.sysdiagram" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="QLQUANCAPHEModel.FK_ChiTietDonHang_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.FK_ChiTietDonHang_MonCafe" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.fk_MaKH_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.fk_MaNV_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.fk_MaSanPham_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.fk_MaKho_MaNguyenLieu" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.FK_MaNguyenLieu_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="QLQUANCAPHEModel.FK_MaPhanLoai_SanPham" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.ADMIN" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="QLQUANCAPHEModel.DONDATHANG" Width="1.5" PointX="10.5" PointY="0.75" />
+        <AssociationConnector Association="QLQUANCAPHEModel.FK_MaKH_DonHang" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

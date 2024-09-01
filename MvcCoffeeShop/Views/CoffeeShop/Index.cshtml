@@ -1,0 +1,50 @@
+﻿@using MvcCoffeeShop.Models
+@model IEnumerable<SanPham>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="fh5co-product">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <span>Cool Stuff</span>
+                <h2>Sản Phẩm</h2>
+                <p>
+                    Từ hương thơm phức tạp đến vị đắng đặc trưng, cà phê đem lại trải nghiệm tinh tế cho người thưởng thức,
+                    là nguồn năng lượng và nguồn cảm hứng cho những người yêu thích thưởng thức đồ uống đậm đà.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var sanpham in Model)
+            {
+                <div class="col-md-4 text-center animate-box">
+                    <div class="product">
+                        <div class="product-grid" style="background-image: url(/Content/Images2/@sanpham.HinhAnh)">
+
+                            <div class="inner">
+                                <p>
+                                    <a href="@Url.Action("Details", "CoffeeShop", new { id = sanpham.MaSanPham.Trim()})"
+                                       class="icon"><i class="icon-shopping-cart"></i></a>
+                                    <a href="@Url.Action("Details", "CoffeeShop", new { id = sanpham.MaSanPham.Trim()})"
+                                       class="icon"><i class="icon-eye"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3>
+                                <a href="@Url.Action("Details", "CoffeeShop", new { id = sanpham.MaSanPham.Trim()})">
+                                    @sanpham.TenSanPham
+                                </a>
+                            </h3>
+                            <span class="price">@sanpham.GiaBan</span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
